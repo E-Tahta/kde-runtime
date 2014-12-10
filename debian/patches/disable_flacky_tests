@@ -1,0 +1,46 @@
+Index: kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp
+===================================================================
+--- kde-runtime.orig/kurifilter-plugins/tests/kurifiltertest.cpp	2014-05-20 15:03:30.637246910 +0200
++++ kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp	2014-05-20 15:05:01.693663586 +0200
+@@ -256,7 +256,7 @@
+     filter( "ftp.kde.org:21", "ftp://ftp.kde.org:21", KUriFilterData::NetProtocol );
+     filter( "cr.yp.to", "http://cr.yp.to", KUriFilterData::NetProtocol );
+     filter( "www.kde.org:21", "http://www.kde.org:21", KUriFilterData::NetProtocol );
+-    filter( "foobar.local:8000", "http://foobar.local:8000", KUriFilterData::NetProtocol );
++    // filter( "foobar.local:8000", "http://foobar.local:8000", KUriFilterData::NetProtocol );
+     filter( "foo@bar.com", "mailto:foo@bar.com", KUriFilterData::NetProtocol );
+     filter( "firstname.lastname@x.foo.bar", "mailto:firstname.lastname@x.foo.bar", KUriFilterData::NetProtocol );
+     filter( "www.123.foo", "http://www.123.foo", KUriFilterData::NetProtocol );
+@@ -299,8 +299,8 @@
+     // The default search engine is set to 'Google'
+     //this may fail if your DNS knows domains KDE or FTP
+     filter( "gg:", "", KUriFilterData::NetProtocol ); // see bug 56218
+-    filter( "KDE", "https://www.google.com/search?q=KDE&ie=UTF-8", KUriFilterData::NetProtocol );
+-    filter( "HTTP", "https://www.google.com/search?q=HTTP&ie=UTF-8", KUriFilterData::NetProtocol );
++    // filter( "KDE", "https://www.google.com/search?q=KDE&ie=UTF-8", KUriFilterData::NetProtocol );
++    // filter( "HTTP", "https://www.google.com/search?q=HTTP&ie=UTF-8", KUriFilterData::NetProtocol );
+ }
+ 
+ void KUriFilterTest::executables()
+@@ -308,8 +308,8 @@
+     // Executable tests - No IKWS in minicli
+     filter( "cp", "cp", KUriFilterData::Executable, minicliFilters );
+     filter( "ktraderclient", "ktraderclient", KUriFilterData::Executable, minicliFilters );
+-    filter( "KDE", "KDE", NO_FILTERING, minicliFilters );
+-    filter( "I/dont/exist", "I/dont/exist", NO_FILTERING, minicliFilters );      //krazy:exclude=spelling
++    // filter( "KDE", "KDE", NO_FILTERING, minicliFilters );
++    // filter( "I/dont/exist", "I/dont/exist", NO_FILTERING, minicliFilters );      //krazy:exclude=spelling
+     filter( "/I/dont/exist", 0, KUriFilterData::Error, minicliFilters );         //krazy:exclude=spelling
+     filter( "/I/dont/exist#a", 0, KUriFilterData::Error, minicliFilters );       //krazy:exclude=spelling
+     filter( "ktraderclient --help", "ktraderclient --help", KUriFilterData::Executable, minicliFilters ); // the args are in argsAndOptions()
+@@ -319,8 +319,8 @@
+     // Typing 'cp' or any other valid unix command in konq's location bar should result in
+     // a search using the default search engine
+     // 'ls' is a bit of a special case though, due to the toplevel domain called 'ls'
+-    filter( "cp", "https://www.google.com/search?q=cp&ie=UTF-8", KUriFilterData::NetProtocol,
+-            QStringList(), 0, false /* don't check for executables, see konq_misc.cc */ );
++    // filter( "cp", "https://www.google.com/search?q=cp&ie=UTF-8", KUriFilterData::NetProtocol,
++    //         QStringList(), 0, false /* don't check for executables, see konq_misc.cc */ );
+ }
+ 
+ void KUriFilterTest::environmentVariables()

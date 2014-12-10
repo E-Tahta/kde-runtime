@@ -1,0 +1,8 @@
+kde-runtime for Debian
+----------------------
+
+The Speaker Placement and Testing part of the Audio Setup control require the
+libcanberra-pulse and sound-theme-freedesktop for the audio test to work, else
+clicking on the speakers buttons won't produce any sound.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 23 Sep 2014 14:00:56 +0200
