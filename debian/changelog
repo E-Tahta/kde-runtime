@@ -1,3 +1,9 @@
+kde-runtime (4:4.14.2-3pardus2) unstable; urgency=medium
+
+  * Fix dh_install errors
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 01 Oct 2018 13:06:31 +0300
+
 kde-runtime (4:4.14.2-3pardus1) unstable; urgency=medium
 
   * Pardus CI integration
