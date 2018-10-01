@@ -1,7 +1,9 @@
-kde4_information_menu.diff
-disable_usr_lib_install_rpath.diff
-khelp_htdig.diff
-use_the_correct_locale.patch
-disable_flacky_tests
-disable_kwalletd_autotests
-upstream_sanitize_path
+0001-kde4_information_menu.patch
+0002-Do-not-set-install-RPATH-to-usr-lib-by-default-usr-l.patch
+0003-khelp_htdig.patch
+0004-use_the_correct_locale.patch
+0005-disable_flacky_tests.patch
+0006-disable_kwalletd_autotests.patch
+0007-upstream_sanitize_path.patch
+0008-Replace-default-desktoptheme-air-to-eta.patch
+0009-Replace-all-oxygen-related-terms-in-cmake-files.patch

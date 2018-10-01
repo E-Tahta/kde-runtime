@@ -1,11 +1,13 @@
-Description: Use the correct locale.
- The test was expecting a specific locale. Everything seems to indicate
- that any UTF-8 enabled locale would work for this testcases, so use
- C.UTF-8 and avoid to have to depend on all locales.
-Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
-Forwarded: https://bugs.kde.org/show_bug.cgi?id=329983
-Last-Update: 2014-01-14
+From: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Mon, 1 Oct 2018 11:02:00 +0300
+Subject: use_the_correct_locale
 
+---
+ kioslave/trash/tests/testtrash.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/kioslave/trash/tests/testtrash.cpp b/kioslave/trash/tests/testtrash.cpp
+index f8d85de..5d06615 100644
 --- a/kioslave/trash/tests/testtrash.cpp
 +++ b/kioslave/trash/tests/testtrash.cpp
 @@ -58,7 +58,7 @@ int initLocale()

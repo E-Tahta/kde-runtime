@@ -1,0 +1,24 @@
+From: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Mon, 1 Oct 2018 11:02:00 +0300
+Subject: Do not set install RPATH to /usr/lib by default /usr/lib RPATH is
+ disallowed on Debian systems and is a bad practise in general
+
+---
+ phonon/platform_kde/CMakeLists.txt | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/phonon/platform_kde/CMakeLists.txt b/phonon/platform_kde/CMakeLists.txt
+index f41a4dc..3d3df10 100644
+--- a/phonon/platform_kde/CMakeLists.txt
++++ b/phonon/platform_kde/CMakeLists.txt
+@@ -19,10 +19,8 @@ endif(ALSA_FOUND)
+ 
+ if(NOT WIN32)
+    set_target_properties(kde PROPERTIES
+-                             INSTALL_RPATH_USE_LINK_PATH TRUE
+                              SKIP_BUILD_RPATH TRUE
+                              BUILD_WITH_INSTALL_RPATH TRUE
+-                             INSTALL_RPATH ${LIB_INSTALL_DIR}
+    )
+ endif(NOT WIN32)
+ 
