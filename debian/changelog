@@ -1,3 +1,10 @@
+kde-runtime (4:4.14.2-3pardus5) unstable; urgency=medium
+
+  * Add patches
+  * Add missing svgz files into install script
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 01 Oct 2018 16:27:34 +0300
+
 kde-runtime (4:4.14.2-3pardus4) unstable; urgency=medium
 
   * Fix dpkg replacement issue on plasma-widgets-workspace
