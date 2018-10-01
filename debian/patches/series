@@ -7,3 +7,4 @@
 0007-upstream_sanitize_path.patch
 0008-Replace-default-desktoptheme-air-to-eta.patch
 0009-Replace-all-oxygen-related-terms-in-cmake-files.patch
+0010-Remove-oxygen-from-desktoptheme-and-update-eta.patch
