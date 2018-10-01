@@ -1,3 +1,12 @@
+kde-runtime (4:4.14.2-3pardus1) unstable; urgency=medium
+
+  * Pardus CI integration
+  * Remove oxygen-icon from dependencies
+  * Add patches
+  * Add eta-icon-theme to depends
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 01 Oct 2018 12:01:21 +0300
+
 kde-runtime (4:4.14.2-2) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
