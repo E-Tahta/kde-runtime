@@ -1,3 +1,9 @@
+kde-runtime (4:4.14.2-3pardus4) unstable; urgency=medium
+
+  * Fix dpkg replacement issue on plasma-widgets-workspace
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 01 Oct 2018 14:47:41 +0300
+
 kde-runtime (4:4.14.2-3pardus3) unstable; urgency=medium
 
   * Fix dpkg replacement issue on plasma-nm
