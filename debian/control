@@ -52,6 +52,7 @@ Package: kde-runtime
 Architecture: any
 Depends: kde-runtime-data (>= ${source:Version}),
          kdelibs5-plugins (>= ${source:Upstream-Version}),
+	 eta-icon-theme (>= 2.1),
          plasma-scriptengine-javascript (= ${binary:Version}),
          ${misc:Depends},
          ${perl:Depends},
