@@ -113,6 +113,8 @@ Replaces: kcontrol,
           kdebase-workspace-bin (<< 4:4.5.95),
           kdelibs5-data (<< 4:4.5),
           plasma-netbook (<< 4:4.5.95),
+	  plasma-nm,
+          plasma-widgets-workspace,
           plasma-widget-networkmanagement (<< 0.1+git20110422.810bc16-1+)
 Breaks: kcontrol,
         kde-workspace-bin (<< 4:4.10),
