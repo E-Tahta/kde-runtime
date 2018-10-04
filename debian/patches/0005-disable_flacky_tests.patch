@@ -1,8 +1,17 @@
-Index: kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp
+From: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 4 Oct 2018 15:50:58 +0300
+Subject: disable_flacky_tests
+
 ===================================================================
---- kde-runtime.orig/kurifilter-plugins/tests/kurifiltertest.cpp	2014-05-20 15:03:30.637246910 +0200
-+++ kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp	2014-05-20 15:05:01.693663586 +0200
-@@ -256,7 +256,7 @@
+---
+ kurifilter-plugins/tests/kurifiltertest.cpp | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/kurifilter-plugins/tests/kurifiltertest.cpp b/kurifilter-plugins/tests/kurifiltertest.cpp
+index 32f968c..13c8e36 100644
+--- a/kurifilter-plugins/tests/kurifiltertest.cpp
++++ b/kurifilter-plugins/tests/kurifiltertest.cpp
+@@ -256,7 +256,7 @@ void KUriFilterTest::shortUris()
      filter( "ftp.kde.org:21", "ftp://ftp.kde.org:21", KUriFilterData::NetProtocol );
      filter( "cr.yp.to", "http://cr.yp.to", KUriFilterData::NetProtocol );
      filter( "www.kde.org:21", "http://www.kde.org:21", KUriFilterData::NetProtocol );
@@ -11,7 +20,7 @@ Index: kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp
      filter( "foo@bar.com", "mailto:foo@bar.com", KUriFilterData::NetProtocol );
      filter( "firstname.lastname@x.foo.bar", "mailto:firstname.lastname@x.foo.bar", KUriFilterData::NetProtocol );
      filter( "www.123.foo", "http://www.123.foo", KUriFilterData::NetProtocol );
-@@ -299,8 +299,8 @@
+@@ -299,8 +299,8 @@ void KUriFilterTest::shortUris()
      // The default search engine is set to 'Google'
      //this may fail if your DNS knows domains KDE or FTP
      filter( "gg:", "", KUriFilterData::NetProtocol ); // see bug 56218
@@ -22,7 +31,7 @@ Index: kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp
  }
  
  void KUriFilterTest::executables()
-@@ -308,8 +308,8 @@
+@@ -308,8 +308,8 @@ void KUriFilterTest::executables()
      // Executable tests - No IKWS in minicli
      filter( "cp", "cp", KUriFilterData::Executable, minicliFilters );
      filter( "ktraderclient", "ktraderclient", KUriFilterData::Executable, minicliFilters );
@@ -33,7 +42,7 @@ Index: kde-runtime/kurifilter-plugins/tests/kurifiltertest.cpp
      filter( "/I/dont/exist", 0, KUriFilterData::Error, minicliFilters );         //krazy:exclude=spelling
      filter( "/I/dont/exist#a", 0, KUriFilterData::Error, minicliFilters );       //krazy:exclude=spelling
      filter( "ktraderclient --help", "ktraderclient --help", KUriFilterData::Executable, minicliFilters ); // the args are in argsAndOptions()
-@@ -319,8 +319,8 @@
+@@ -319,8 +319,8 @@ void KUriFilterTest::executables()
      // Typing 'cp' or any other valid unix command in konq's location bar should result in
      // a search using the default search engine
      // 'ls' is a bit of a special case though, due to the toplevel domain called 'ls'

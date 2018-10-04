@@ -1,7 +1,16 @@
-Index: kde-runtime/kwalletd/autotests/CMakeLists.txt
+From: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 4 Oct 2018 15:50:58 +0300
+Subject: disable_kwalletd_autotests
+
 ===================================================================
---- kde-runtime.orig/kwalletd/autotests/CMakeLists.txt	2014-05-20 14:51:39.977188082 +0200
-+++ kde-runtime/kwalletd/autotests/CMakeLists.txt	2014-05-20 14:51:58.912444084 +0200
+---
+ kwalletd/autotests/CMakeLists.txt | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/kwalletd/autotests/CMakeLists.txt b/kwalletd/autotests/CMakeLists.txt
+index 5ffbba4..dae2e6e 100644
+--- a/kwalletd/autotests/CMakeLists.txt
++++ b/kwalletd/autotests/CMakeLists.txt
 @@ -1,11 +1,11 @@
  add_definitions(-DTEST_DATA="\\\"${CMAKE_CURRENT_SOURCE_DIR}/\\\"")
  

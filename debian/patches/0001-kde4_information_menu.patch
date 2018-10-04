@@ -1,3 +1,14 @@
+From: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 4 Oct 2018 15:50:58 +0300
+Subject: kde4_information_menu
+
+---
+ kcontrol/menus/CMakeLists.txt       | 4 ++--
+ kcontrol/menus/kde-information.menu | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/kcontrol/menus/CMakeLists.txt b/kcontrol/menus/CMakeLists.txt
+index c5b180e..def9905 100644
 --- a/kcontrol/menus/CMakeLists.txt
 +++ b/kcontrol/menus/CMakeLists.txt
 @@ -5,7 +5,7 @@
@@ -10,6 +21,8 @@
  
 -install( FILES kde-information.directory  DESTINATION  ${XDG_DIRECTORY_INSTALL_DIR} )
 +install( FILES kde-information.directory  DESTINATION ${XDG_DIRECTORY_INSTALL_DIR} RENAME kde4-information.directory )
+diff --git a/kcontrol/menus/kde-information.menu b/kcontrol/menus/kde-information.menu
+index 296bf53..2cc414f 100644
 --- a/kcontrol/menus/kde-information.menu
 +++ b/kcontrol/menus/kde-information.menu
 @@ -3,7 +3,7 @@
