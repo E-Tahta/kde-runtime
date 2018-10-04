@@ -221,7 +221,6 @@ usr/share/kde4/apps/cmake/modules/FindSLP.cmake
 usr/share/kde4/apps/desktoptheme/appdashboard/metadata.desktop
 usr/share/kde4/apps/desktoptheme/appdashboard/widgets/background.svgz
 usr/share/kde4/apps/desktoptheme/appdashboard/widgets/newspaper-background.svgz
-usr/share/kde4/apps/desktoptheme/default/colors
 usr/share/kde4/apps/desktoptheme/default/dialogs/background.svgz
 usr/share/kde4/apps/desktoptheme/default/dialogs/kickoff.svgz
 usr/share/kde4/apps/desktoptheme/default/dialogs/krunner.svgz
