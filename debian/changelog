@@ -1,3 +1,10 @@
+kde-runtime (4:4.14.2-3pardus6) unstable; urgency=medium
+
+  * Add patches
+  * Remove colors from install script
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 04 Oct 2018 14:17:37 +0300
+
 kde-runtime (4:4.14.2-3pardus5) unstable; urgency=medium
 
   * Add patches
